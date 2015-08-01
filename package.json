@@ -23,6 +23,7 @@
     "ejs": "~0.8.5",
     "pg": "^4.1.1",
     "pg-hstore": "2.3.2",
-    "sequelize": "^2.0.0-rc4"
+    "sequelize": "^2.0.0-rc4",
+    "method-override": "^2.3.1"
   }
 }
