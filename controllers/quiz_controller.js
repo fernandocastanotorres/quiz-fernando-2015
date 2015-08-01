@@ -104,3 +104,11 @@ exports.update = function(req, res) {
 	);
 
 }
+
+// Delete 
+exports.destroy = function(req, res) {
+	console.log('Se va a borrar la pregunta ' + req.quiz.pregunta);
+	req.quiz.destroy().then(function() {
+		res.redirect('/quizes');
+	}).catch(function(error) {next(error);});
+}
